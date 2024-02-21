@@ -1,6 +1,7 @@
-.app {
+.App {
   border: 1px solid red;
   width: 95%;
   height: 100vh;
   margin: 0 auto;
+  display: flex;
 }
