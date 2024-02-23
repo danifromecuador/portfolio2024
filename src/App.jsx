@@ -8,15 +8,13 @@ import { Footer } from './components/Footer.jsx'
 export const App = () => {
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         <div className="left">     
           < Hero />     
           < Navbar />
           < Footer />
         </div>
-        <div className="right">
           < MainPage />
-        </div>
       </div>
     </Router>
   )
