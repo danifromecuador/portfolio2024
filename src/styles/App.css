@@ -1,7 +1,13 @@
-.App {
-  border: 1px solid red;
-  width: 95%;
+.app {
+  width: 100%;
   height: 100vh;
   margin: 0 auto;
   display: flex;
+}
+
+.left {
+  width: 35%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

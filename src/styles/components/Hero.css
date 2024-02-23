@@ -1,6 +1,6 @@
-.navbar {
-  height: 20%;
-  border: 1px solid green;
+.hero {
+  height: 65%;
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
