@@ -7,7 +7,7 @@ export const Hero = () => {
         picture
       </div>
       <div className="hero-name">
-        Hey there, I'm Dani
+        Hey there, I&apos; Dani
       </div>
       <div className="hero-img">
         picture
