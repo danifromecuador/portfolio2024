@@ -14,7 +14,9 @@ export const App = () => {
           < Navbar />
           < Footer />
         </div>
+        <div className="right">
           < MainPage />
+        </div>
       </div>
     </Router>
   )
