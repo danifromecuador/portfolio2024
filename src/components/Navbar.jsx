@@ -1,13 +1,22 @@
-import { Link } from "react-router-dom"
 import '../styles/components/Navbar.css'
 
 export const Navbar = () => {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start', //is this line necessary?
+      });
+    }
+  };
   return (
-    <div className="navbar">
-    <Link to="/">Home</Link>
-    <Link to="/projects">Projects</Link>
-    <Link to="/skills">Skills</Link>
-    <Link to="/contact">Contact</Link>
-    </div>
+    <nav className='navbar'>
+      <button onClick={() => scrollToSection('header')}>Header</button>
+      <button onClick={() => scrollToSection('projects')}>Projects</button>
+      <button onClick={() => scrollToSection('skills')}>Skills</button>
+      <button onClick={() => scrollToSection('contact')}>Contact</button>
+    </nav>
   )
 }
