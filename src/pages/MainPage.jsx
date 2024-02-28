@@ -3,16 +3,16 @@ import '../styles/pages/MainPage.css'
 export const MainPage = () => {
   return (
     <div className="main-page">
-      <div className="header">
+      <div id="header">
         header
       </div>
-      <div className="projects">
+      <div id="projects">
         projects
       </div>
-      <div className="skills">
+      <div id="skills">
         skills
       </div>
-      <div className="contact">
+      <div id="contact">
         contact
       </div>
     </div>
