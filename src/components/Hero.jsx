@@ -4,16 +4,16 @@ export const Hero = () => {
   return (
     <div className="hero">
       <div className="theme">
-        picture
+        <div className="dark-png"></div>
+        <div className="light-png"></div>
       </div>
       <div className="hero-name">
-        Hey there, I&apos; Dani
+        <p>Hey There,</p>
+        <p>I&apos;m Dani.</p>
       </div>
-      <div className="hero-img">
-        picture
-      </div>
+      <div className="hero-img"></div>
       <div className="hero-about">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit aliquam aperiam ut commodi, dolores suscipit eligendi quaerat placeat quibusdam, praesentium sequi, ipsam officiis error laudantium quisquam doloremque blanditiis quos.
+        I can help you build a product , feature or website. Look through some of my work and experience!
       </div>
     </div>
   )
