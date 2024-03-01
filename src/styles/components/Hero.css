@@ -21,6 +21,21 @@
   background-size: cover;
 }
 
+@keyframes sun-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dark-png {
+    animation: sun-spin infinite 20s linear;
+  }
+}
+
 .hero-name {
   font-family: 'Birthstone', cursive;
   font-weight: 800;
