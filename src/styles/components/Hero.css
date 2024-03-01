@@ -7,6 +7,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 20px 0 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 .theme {
@@ -14,24 +16,26 @@
   justify-content: right;
 }
 
-.dark-png {
-  width: 60px;
-  height: 60px;
-  background-image: url(../../assets/images/sun2.png);
-  background-size: cover;
+.sun-bright-shadow {
+  margin-right: -32px;
+  margin-top: 13px;
+  box-shadow: 0 0 150px 60px rgba(255, 255, 0, 0.8);
 }
 
+.sun-png {
+  width: 60px;
+  height: 60px;
+}
+
+
+
 @keyframes sun-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .dark-png {
+  .sun-png {
     animation: sun-spin infinite 20s linear;
   }
 }

@@ -1,10 +1,12 @@
 import '../styles/components/Hero.css'
+import sun2 from '../assets/images/sun2.png'
 
 export const Hero = () => {
   return (
     <div className="hero">
       <div className="theme">
-        <div className="dark-png"></div>
+        <div className="sun-bright-shadow"></div>
+        <img className='sun-png' src={sun2} alt="" />
         <div className="light-png"></div>
       </div>
       <div className="hero-name">
