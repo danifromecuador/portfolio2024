@@ -15,6 +15,7 @@
   text-align: left;
   overflow: hidden;
 }
+
 .navbar button:hover {
   background-image: url(../../assets/images/stripes.png);
   background-size: 30% 100%;
