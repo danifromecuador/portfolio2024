@@ -13,7 +13,7 @@ export const Navbar = () => {
   };
   return (
     <nav className='navbar'>
-      <button onClick={() => scrollToSection('header')}>Header</button>
+      <button onClick={() => scrollToSection('header')}>About Me</button>
       <button onClick={() => scrollToSection('projects')}>Projects</button>
       <button onClick={() => scrollToSection('skills')}>Skills</button>
       <button onClick={() => scrollToSection('contact')}>Contact</button>
