@@ -19,7 +19,7 @@
 .navbar button:hover {
   background-image: url(../../assets/images/stripes.png);
   background-size: 30% 100%;
-  background-position: 10px 0;
+  background-position: 10px 2px;
   background-repeat: no-repeat;
 }
 
