@@ -5,3 +5,21 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.navbar button {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  /* width: fit-content; */
+  text-align: left;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.navbar button:hover {
+  background-image: url(../../assets/images/stripes.png);
+  background-size: 100% 110%;
+  background-repeat: no-repeat;
+}
