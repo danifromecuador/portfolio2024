@@ -2,13 +2,10 @@
 
 .hero {
   height: 65%;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 20px 0 20px;
-  background-color: rgb(0, 0, 0);
-  color: white;
 }
 
 .theme {
@@ -26,7 +23,7 @@
   width: 60px;
   height: 60px;
 }
-
+/*
 @keyframes sun-spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -37,7 +34,7 @@
     animation: sun-spin infinite 20s linear;
   }
 }
-
+*/
 .hero-name {
   font-family: 'Birthstone', cursive;
   font-weight: 800;
