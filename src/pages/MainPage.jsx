@@ -13,7 +13,8 @@ export const MainPage = () => {
         skills
       </div>
       <div id="contact">
-        contact
+        <p>contact</p> 
+        If you like what you see and have a project you need coded, don’t hestiate to contact me.
       </div>
     </div>
   )
