@@ -1,3 +1,28 @@
 .footer {
-  border: 1px solid blue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #66b6ab;
+  height: 50px;
+  border-radius: 7px 7px 0 0;
+}
+
+.footer li,
+.footer a {
+  display: flex;
+  align-items: center;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.footer .gmail-icon {
+  width: 40px;
+}
+
+.footer img:hover {
+  background-color: #a6f6af;
 }

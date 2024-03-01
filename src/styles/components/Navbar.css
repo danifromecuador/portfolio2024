@@ -1,6 +1,5 @@
 .navbar {
   height: 20%;
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10,7 +9,7 @@
   position: relative;
   padding: 10px 20px;
   border: none;
-  background-color: white;
+  background-color: transparent;
   cursor: pointer;
   text-align: left;
   overflow: hidden;
