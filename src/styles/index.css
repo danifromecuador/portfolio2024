@@ -4,6 +4,7 @@
   padding: 0;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
