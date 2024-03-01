@@ -4,7 +4,7 @@
   align-items: center;
   background-color: #66b6ab;
   height: 50px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 7px 7px 0 0;
 }
 
 .footer li, .footer a {
@@ -18,7 +18,12 @@
   border-radius: 6px;
 }
 
-.footer img:hover {
-  background-color: red;
-  
+.footer .gmail-icon {
+  width: 40px;  
 }
+
+.footer img:hover {
+  background-color: #a6f6af;  
+}
+
+

@@ -8,7 +8,7 @@ export const Footer = () => {
     <ul className="footer">
       <li>
         <a href="mailto:danifromecuador@gmail.com">
-          <img src={gmail} alt="gmail_icon" />
+          <img className='gmail-icon' src={gmail} alt="gmail_icon" />
         </a>
       </li>
 
