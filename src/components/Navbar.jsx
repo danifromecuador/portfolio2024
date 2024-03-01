@@ -15,7 +15,7 @@ export const Navbar = () => {
     <nav className='navbar'>
       <button onClick={() => scrollToSection('header')}>About Me</button>
       <button onClick={() => scrollToSection('projects')}>Projects</button>
-      <button onClick={() => scrollToSection('skills')}>Skills</button>
+      <button className='skills-btn' onClick={() => scrollToSection('skills')}>Skills</button>
       <button onClick={() => scrollToSection('contact')}>Contact</button>
     </nav>
   )

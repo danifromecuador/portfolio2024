@@ -8,18 +8,20 @@
 
 .navbar button {
   position: relative;
-  padding: 10px;
+  padding: 10px 20px;
   border: none;
   background-color: white;
   cursor: pointer;
-  /* width: fit-content; */
   text-align: left;
   overflow: hidden;
-  border: 1px solid black;
 }
-
 .navbar button:hover {
   background-image: url(../../assets/images/stripes.png);
-  background-size: 100% 110%;
+  background-size: 30% 100%;
+  background-position: 10px 0;
   background-repeat: no-repeat;
+}
+
+.navbar .skills-btn:hover {
+  background-size: 20% 100%;
 }
