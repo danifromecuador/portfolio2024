@@ -25,3 +25,10 @@
 .navbar .skills-btn:hover {
   background-size: 20% 100%;
 }
+
+.active {
+  background-image: url(../../assets/images/stripes.png);
+  background-size: 30% 100%;
+  background-position: 10px 2px;
+  background-repeat: no-repeat;
+}
