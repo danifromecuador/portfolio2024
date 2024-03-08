@@ -16,21 +16,67 @@
   font-size: 1.8rem;
 }
 
-.navbar button:hover {
-  background-image: url(../../assets/images/stripes.png);
-  background-size: 30% 100%;
-  background-position: 10px 2px;
-  background-repeat: no-repeat;
-}
-
-.navbar .skills-btn:hover {
-  background-size: 20% 100%;
-}
+/* active background effect */
 
 .active {
   background-image: url(../../assets/images/stripes.png);
-  background-size: 30% 100%;
-  background-position: 10px 2px;
   background-repeat: no-repeat;
-  margin-left: 12px;
+  margin-left: 18px;
 }
+
+.header.active {
+  background-size: 34% 110%;
+}
+
+.projects.active {
+  background-size: 30% 110%;
+}
+
+.skills.active {
+  background-size: 21% 110%;
+}
+
+.contact.active {
+  background-size: 28% 110%;
+}
+
+
+
+
+
+/* hover background effect */
+.navbar .header:hover,
+.navbar .projects:hover,
+.navbar .skills:hover,
+.navbar .contact:hover {
+  background-image: url(../../assets/images/stripes.png);
+  background-repeat: no-repeat;
+  opacity: 55%;
+}
+
+.navbar .header.active,
+.navbar .projects.active,
+.navbar .skills.active,
+.navbar .contact.active {
+  opacity: 100%;
+}
+
+.navbar .header:hover {
+  background-size: 34% 110%;
+}
+
+.navbar .projects:hover {
+  background-size: 30% 110%;
+}
+
+.navbar .skills:hover {
+  background-size: 21% 110%;
+}
+
+.navbar .contact:hover {
+  background-size: 28% 110%;
+}
+
+
+
+

@@ -53,25 +53,25 @@ export const Navbar = () => {
     <nav className='navbar'>
       <button
         onClick={() => scrollToSection('header')}
-        className={activeSection === 'header' ? 'active' : ''}
+        className={`header ${activeSection === 'header' ? 'active' : ''}`}
       >
         About Me
       </button>
       <button
         onClick={() => scrollToSection('projects')}
-        className={activeSection === 'projects' ? 'active' : ''}
+        className={`projects ${activeSection === 'projects' ? 'active' : ''}`}
       >
         Projects
       </button>
       <button
         onClick={() => scrollToSection('skills')}
-        className={`skills-btn ${activeSection === 'skills' ? 'active' : ''}`}
+        className={`skills ${activeSection === 'skills' ? 'active' : ''}`}
       >
         Skills
       </button>
       <button
         onClick={() => scrollToSection('contact')}
-        className={activeSection === 'contact' ? 'active' : ''}
+        className={`contact ${activeSection === 'contact' ? 'active' : ''}`}
       >
         Contact
       </button>
