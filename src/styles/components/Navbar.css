@@ -40,11 +40,8 @@
   background-size: 28% 110%;
 }
 
-
-
-
-
 /* hover background effect */
+
 .navbar .header:hover,
 .navbar .projects:hover,
 .navbar .skills:hover,
@@ -76,7 +73,3 @@
 .navbar .contact:hover {
   background-size: 28% 110%;
 }
-
-
-
-
