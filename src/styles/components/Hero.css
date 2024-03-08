@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
   /* border: 1px solid red; */
@@ -64,6 +63,5 @@
 }
 
 .hero-about {
-  font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
 }
