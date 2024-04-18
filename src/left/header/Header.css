@@ -9,7 +9,6 @@
 .Header .night_icon {
   width: 70px;
   height: 70px;
-  border: 1px solid black;
   cursor: pointer;
   background-size: 100% 100%;
   background-repeat: no-repeat;  
@@ -17,9 +16,19 @@
 
 .Header .day_icon {
   background-image: url('./sun.png');
+  animation: rotate infinite 20s linear;
 }
 
 .Header .night_icon {
   background-image: url('./cloud.png');
   width: 120px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
