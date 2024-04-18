@@ -38,6 +38,15 @@
   animation: rotate_moon infinite 5s linear;
 }
 
+.Header .moon_bright_shadow {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  position: absolute;
+  margin-right: 34px;
+  box-shadow: 0 0 100px 160px rgba(74, 110, 133, 0.5);
+}
+
 @keyframes rotate_sun {
   from {
     transform: rotateZ(0deg);
