@@ -1,8 +1,8 @@
 /* src/main/App.css */
-.app {  
+.app {
   width: 95vw;
   height: 95vh;
-  display: flex;  
+  display: flex;
 }
 
 .left {
@@ -19,7 +19,10 @@
   overflow-y: scroll;
 }
 
-.About, .Projects, .Skills, .Contact {
+.About,
+.Projects,
+.Skills,
+.Contact {
   height: 100vh;
   border: 1px solid red;
 }
