@@ -16,19 +16,28 @@
 
 .Header .day_icon {
   background-image: url('./sun.png');
-  animation: rotate infinite 20s linear;
+  animation: rotate_sun infinite 20s linear;
 }
 
 .Header .night_icon {
-  background-image: url('./cloud.png');
-  width: 120px;
+  background-image: url('./moon.png');
+  animation: rotate_moon infinite 5s linear;
 }
 
-@keyframes rotate {
+@keyframes rotate_sun {
   from {
     transform: rotateZ(0deg);
   }
   to {
     transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate_moon {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(60deg);
   }
 }
