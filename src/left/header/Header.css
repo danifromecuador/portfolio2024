@@ -1,8 +1,9 @@
 /* src/left/header/Header.css */
 .Header {
-  border: 1px solid red;
+  height: 70px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .Header .day_icon,
@@ -15,11 +16,24 @@
 }
 
 .Header .day_icon {
+  background-color: transparent;
   background-image: url('./sun.png');
-  animation: rotate_sun infinite 20s linear;
+  animation: rotate_sun infinite 40s linear;
+}
+
+.Header .sun_bright_shadow {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  position: absolute;
+  margin-right: 34px;
+  box-shadow: 0 0 160px 160px rgba(255, 255, 0, 0.5);
 }
 
 .Header .night_icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
   background-image: url('./moon.png');
   animation: rotate_moon infinite 5s linear;
 }
@@ -35,11 +49,15 @@
 }
 
 @keyframes rotate_moon {
-  from {
+  0% {
     transform: rotateZ(0deg);
   }
 
-  to {
+  50% {
     transform: rotateZ(60deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
   }
 }

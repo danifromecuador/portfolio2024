@@ -10,12 +10,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #a6f6af;
+  background-color: var(--bg_left);
+  color: var(--text1);
 }
 
 .right {
   width: 70%;
-  background-color: #fffbb7;
+  background-color: var(--bg_right);
+  color: var(--text1);
   overflow-y: scroll;
 }
 
@@ -24,5 +26,6 @@
 .Skills,
 .Contact {
   height: 100vh;
-  border: 1px solid red;
+
+  /* border: 1px solid red; */
 }
