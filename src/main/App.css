@@ -1,6 +1,25 @@
 /* src/main/App.css */
-.app {
-  border: 1px solid red;
+.app {  
   width: 95vw;
   height: 95vh;
+  display: flex;  
+}
+
+.left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #a6f6af;
+}
+
+.right {
+  width: 70%;
+  background-color: #fffbb7;
+  overflow-y: scroll;
+}
+
+.About, .Projects, .Skills, .Contact {
+  height: 100vh;
+  border: 1px solid red;
 }

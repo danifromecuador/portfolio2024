@@ -18,7 +18,7 @@ export const App = () => {
         <Navbar />
         <Footer />
       </div>
-      <div className="righ">
+      <div className="right">
         <About />
         <Projects />
         <Skills />
