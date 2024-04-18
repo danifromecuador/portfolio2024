@@ -2,23 +2,6 @@
 import { create } from "zustand";
 import { devtools } from 'zustand/middleware';
 
-// const createBearSlice = (set) => ({
-//   bears: 24,
-//   increaseBears: () => set((state) => ({
-//     BearSlice: { ...state.BearSlice, bears: state.BearSlice.bears + 1 },
-//     CowSlice: { cows: state.CowSlice.cows - 1 }
-//   }))
-// });
-
-// const createCowSlice = () => ({
-//   cows: 7,
-// });
-
-// export const Stores = create(devtools((set) => ({
-//   BearSlice: createBearSlice(set),
-//   CowSlice: createCowSlice(),
-// })));
-
 const lightTheme = {
   backgroundLeft: "#a6f6af",
   backgroundRight: "#fffbb7",
