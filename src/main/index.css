@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 :root {
-  --bg_left: #a6f6af;
-  --bg_right: #fffbb7;
-  --bg_footer: gray;
-  --text1: black;
+  --bg_left: #a5e6c8;
+  --bg_right: #d9f5b5;
+  --title: #142026;
+  --text: #20130a;
 }
 
 [data-theme="dark"] {
-  --bg_left: navy;
-  --bg_right: black;
-  --bg_footer: rgb(0, 0, 0);
-  --text1: rgb(255, 255, 255);
+  --bg_right: #123142;
+  --bg_left: #142026;
+  --title: #a5e6c8;
+  --text: #8dcdeb;
 }
 
 * {

@@ -11,13 +11,13 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--bg_left);
-  color: var(--text1);
+  color: var(--text);
 }
 
 .right {
   width: 70%;
   background-color: var(--bg_right);
-  color: var(--text1);
+  color: var(--text);
   overflow-y: scroll;
 }
 

@@ -27,7 +27,7 @@
   border-radius: 50%;
   position: absolute;
   margin-right: 34px;
-  box-shadow: 0 0 160px 160px rgba(255, 255, 0, 0.5);
+  box-shadow: 0 0 180px 100px rgba(255, 255, 0, 0.5);
 }
 
 .Header .night_icon {
