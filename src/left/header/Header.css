@@ -11,7 +11,7 @@
   height: 70px;
   cursor: pointer;
   background-size: 100% 100%;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 .Header .day_icon {
@@ -28,6 +28,7 @@
   from {
     transform: rotateZ(0deg);
   }
+
   to {
     transform: rotateZ(360deg);
   }
@@ -37,6 +38,7 @@
   from {
     transform: rotateZ(0deg);
   }
+
   to {
     transform: rotateZ(60deg);
   }
