@@ -1,12 +1,29 @@
 // src/main/App.jsx
+import { Header } from '../left/header/Header.jsx'
+import { Main } from '../left/main/Main.jsx'
+import { Navbar } from '../left/navbar/Navbar.jsx'
+import { Footer } from '../left/footer/Footer.jsx'
+import { About } from '../right/about/About.jsx'
+import { Projects } from '../right/projects/Projects.jsx'
+import { Skills } from '../right/skills/Skills.jsx'
+import { Contact } from '../right/contact/Contact.jsx'
 import './App.css'
-import { store } from '../store/store.js'
 
 export const App = () => {
   return (
     <div className="app">
-      <p>Hello Dani</p>
-      <p>Bears Count: {store.getState().bears}</p>
+      <div className="left">
+        <Header />
+        <Main />
+        <Navbar />
+        <Footer />
+      </div>
+      <div className="righ">
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+      </div>
     </div>
   )
 }
