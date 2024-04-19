@@ -4,6 +4,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  border: 1px solid red;
+  padding: 0 5%;
 }
 
 .Header .day_icon,

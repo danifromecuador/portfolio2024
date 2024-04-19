@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
+.Main {
+  padding: 0 5%;
+  border: 1px solid red;
+}
+
+.Main .title {
+  font-family: 'Birthstone', cursive;
+}
+
+.Main .img_container {
+  display: flex;
+  justify-content: center;
+}
+
+.Main .img_container .img {
+  width: 150px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-image: url('./hero.jpg');
+  background-size: cover;
+}
+
+.Main .text {
+  border: 1px solid red;
+  text-justify:inter-cluster;
+}
+
