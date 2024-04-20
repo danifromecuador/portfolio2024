@@ -1,3 +1,6 @@
 .Footer {
   /* color: aquamarine; */
+  padding: 0 5%;
+  height: 100px;
+  border: 1px solid red;
 }

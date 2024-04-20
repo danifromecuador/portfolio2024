@@ -1,3 +1,6 @@
 .Navbar {
   /* color: blue; */
+  height: 400px;
+  border: 1px solid white;
+  padding: 0 5%;
 }
