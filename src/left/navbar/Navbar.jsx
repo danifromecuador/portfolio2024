@@ -28,7 +28,7 @@ export const Navbar = () => {
       <li
         onMouseMove={() => setHovered4("hovered")}
         onMouseLeave={() => setHovered4("")}>
-        <span className={hovered4}>Contact</span>
+        <span className={hovered4}><p>Contact</p></span>
       </li>
     </nav>
   )

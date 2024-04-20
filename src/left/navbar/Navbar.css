@@ -9,16 +9,28 @@
 
 .Navbar li {
   cursor: pointer;
-  border: 1px solid red;
   height: fit-content;
   display: flex;
 }
 
 .Navbar li span {
   padding: 10px;
+  font-size: 1.3rem;
+  /* transition: all 0.4s ease-in-out; */
+
+  transition: all 0.1s ease-in-out;
 }
 
 .Navbar li  .hovered {
-  background-color: blue;
+  background-image: url(./stripes.png);
+  background-size: 100% 100%;
   transition: all 0ms 0ms ease-out;
+  margin-left: 25px;
+  font-size: 1.6rem;
+  opacity: 0.4;
+}
+
+.Navbar li span p {
+  z-index: 1;
+  opacity: 1;
 }
