@@ -16,21 +16,27 @@
 .Navbar li span {
   padding: 10px;
   font-size: 1.3rem;
-  /* transition: all 0.4s ease-in-out; */
-
-  transition: all 0.1s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-.Navbar li  .hovered {
-  background-image: url(./stripes.png);
+.Navbar li .light.active,
+.Navbar li .light.active.hovered,
+.Navbar li .dark.active,
+.Navbar li .dark.active.hovered {
+  background: url(//s2.svgbox.net/pen-brushes.svg?color=9a8fc8&ic=brush-3);
   background-size: 100% 100%;
-  transition: all 0ms 0ms ease-out;
-  margin-left: 25px;
-  font-size: 1.6rem;
-  opacity: 0.4;
+  margin-left: 15px;
+  font-size: 1.8rem;
 }
 
-.Navbar li span p {
-  z-index: 1;
-  opacity: 1;
+.Navbar li .light.hovered,
+.Navbar li .dark.hovered{
+  background: url(//s2.svgbox.net/pen-brushes.svg?color=5f9a8fc8&ic=brush-3);
+  background-size: 100% 100%;
+  margin-left: 5px;
+  font-size: 1.5rem;
+}
+
+.Navbar li .dark.active {
+  color: #e9f0c9;
 }
