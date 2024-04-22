@@ -1,6 +1,6 @@
 /* src/left/header/Header.css */
 .Header {
-  height: 70px;
+  min-height: 70px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
