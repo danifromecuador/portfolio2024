@@ -11,9 +11,11 @@
 .Header .night_icon {
   width: 70px;
   height: 70px;
+  border-radius: 50%;
   cursor: pointer;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .Header .day_icon {
