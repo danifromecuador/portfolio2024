@@ -1,6 +1,52 @@
 .Footer {
-  /* color: aquamarine; */
   padding: 0 5%;
   height: 100px;
   border: 1px solid red;
+}
+
+.Footer .icons {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.Footer .icons .linkedin,
+.Footer .icons .github,
+.Footer .icons .gmail,
+.Footer .icons .whatsapp {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.Footer .icons .linkedin {
+  background-image: url(./icons/linkedin.png);
+}
+
+.Footer .icons .github {
+  background-image: url(./icons/github.png);
+}
+
+.Footer .icons .gmail {
+  background-image: url(./icons/gmail.png);
+}
+
+.Footer .icons .linkedin:hover,
+.Footer .icons .github:hover,
+.Footer .icons .gmail:hover {
+  background-color: #d9f5b5;
+}
+
+.Footer .icons .dark.linkedin,
+.Footer .icons .dark.github,
+.Footer .icons .dark.gmail {
+  background-color: gray;
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 5px;
 }
