@@ -9,7 +9,6 @@
 
 .Navbar li {
   cursor: pointer;
-  height: fit-content;
   display: flex;
 }
 
@@ -30,7 +29,7 @@
 }
 
 .Navbar li .light.hovered,
-.Navbar li .dark.hovered{
+.Navbar li .dark.hovered {
   background: url(//s2.svgbox.net/pen-brushes.svg?color=5f9a8fc8&ic=brush-3);
   background-size: 100% 100%;
   margin-left: 5px;
