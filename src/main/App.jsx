@@ -19,10 +19,10 @@ export const App = () => {
         <Footer />
       </div>
       <div className="right">
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
+        <div><About /></div>
+        <div><Projects /></div>
+        <div><Skills /></div>
+        <div><Contact /></div>
       </div>
     </div>
   )

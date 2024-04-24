@@ -3,7 +3,7 @@ import './Skills.css'
 
 export const Skills = () => {
   return (
-    <div className='Skills'>
+    <div className='Skills' id='skills'>
       Skills Component
     </div>
   )
