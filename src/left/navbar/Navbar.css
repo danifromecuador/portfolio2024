@@ -14,7 +14,7 @@
 .Navbar li span {
   padding: 10px 0;
   font-size: 1.3rem;
-  transition: all 0.4s ease-in-out; 
+  transition: all 0.4s ease-in-out;
 }
 
 .Navbar li .light.active,
