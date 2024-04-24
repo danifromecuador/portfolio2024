@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Stores } from '../../store/store.js'
 import './Navbar.css'
 
-export const Navbar = ({ refs }) => {
+export const Navbar = () => {
   const { ThemeSlice } = Stores()
   const theme = ThemeSlice.theme
 
@@ -16,37 +16,37 @@ export const Navbar = ({ refs }) => {
   const [active3, setActive3] = useState("")
   const [active4, setActive4] = useState("")
 
-  const scrollToComponent = (ref) => { if (ref && ref.current) ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' }) }
+  const scrollToComponent = (component) => document.getElementById(component).scrollIntoView({ behavior: 'smooth' })
 
   const handleClick = (component) => {
-    if (component === "about") { scrollToComponent(refs.about); setActive1("active"); setActive2(""); setActive3(""); setActive4("") }
-    if (component === "projects") { scrollToComponent(refs.projects); setActive1(""); setActive2("active"); setActive3(""); setActive4("") }
-    if (component === "skills") { scrollToComponent(refs.skills); setActive1(""); setActive2(""); setActive3("active"); setActive4("") }
-    if (component === "contact") { scrollToComponent(refs.contact); setActive1(""); setActive2(""); setActive3(""); setActive4("active") }
+    if (component === "about") { scrollToComponent("about"); setActive1("active"); setActive2(""); setActive3(""); setActive4("") }
+    if (component === "projects") { scrollToComponent("projects"); setActive1(""); setActive2("active"); setActive3(""); setActive4("") }
+    if (component === "skills") { scrollToComponent("skills"); setActive1(""); setActive2(""); setActive3("active"); setActive4("") }
+    if (component === "contact") { scrollToComponent("contact"); setActive1(""); setActive2(""); setActive3(""); setActive4("active") }
   }
 
   return (
     <nav className='Navbar'>
       <li
-        onClick={() => { handleClick("about") }}
+        onClick={() => handleClick("about")}
         onMouseMove={() => setHovered1("hovered")}
         onMouseLeave={() => setHovered1("")}>
-        <span className={` ${theme} ${active1} ${hovered1}`}>About Me</span>
+        <span className={`${theme} ${active1} ${hovered1}`}>About Me</span>
       </li>
       <li
-        onClick={() => { handleClick("projects") }}
+        onClick={() => handleClick("projects")}
         onMouseMove={() => setHovered2("hovered")}
         onMouseLeave={() => setHovered2("")}>
         <span className={`${theme} ${active2} ${hovered2}`}>Projects</span>
       </li>
       <li
-        onClick={() => { handleClick("skills") }}
+        onClick={() => handleClick("skills")}
         onMouseMove={() => setHovered3("hovered")}
         onMouseLeave={() => setHovered3("")}>
         <span className={`${theme} ${active3} ${hovered3}`}>Skills</span>
       </li>
       <li
-        onClick={() => { handleClick("contact") }}
+        onClick={() => handleClick("contact")}
         onMouseMove={() => setHovered4("hovered")}
         onMouseLeave={() => setHovered4("")}>
         <span className={`${theme} ${active4} ${hovered4}`}>Contact</span>
