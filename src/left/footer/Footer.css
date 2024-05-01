@@ -43,16 +43,6 @@
 .Footer .icons .github:hover,
 .Footer .icons .gmail:hover,
 .Footer .icons .whatsapp:hover {
-  background-color: #d9f5b5;
-}
-
-.Footer .icons .dark.linkedin,
-.Footer .icons .dark.github,
-.Footer .icons .dark.gmail,
-.Footer .icons .dark.whatsapp {
-  background-color: gray;
-  background-size: 90% 90%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  padding: 5px;
+  width: 70px;
+  height: 70px;
 }
