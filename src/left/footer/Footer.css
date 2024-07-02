@@ -1,6 +1,65 @@
 .Footer {
-  /* color: aquamarine; */
   padding: 0 5%;
   height: 100px;
   border: 1px solid red;
+}
+
+.Footer .icons {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.Footer .icons .linkedin,
+.Footer .icons .github,
+.Footer .icons .gmail,
+.Footer .icons .whatsapp {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.Footer .icons .light.linkedin {
+  background-image: url(./icons/linkedin_black.svg);
+}
+
+.Footer .icons .light.github {
+  background-image: url(./icons/github_black.svg);
+}
+
+.Footer .icons .light.gmail {
+  background-image: url(./icons/gmail_black.svg);
+}
+
+.Footer .icons .light.whatsapp {
+  background-image: url(./icons/whatsapp_black.svg);
+}
+
+.Footer .icons .dark.linkedin {
+  background-image: url(./icons/linkedin_white.svg);
+}
+
+.Footer .icons .dark.github {
+  background-image: url(./icons/github_white.svg);
+}
+
+.Footer .icons .dark.gmail {
+  background-image: url(./icons/gmail_white.svg);
+}
+
+.Footer .icons .dark.whatsapp {
+  background-image: url(./icons/whatsapp_white.svg);
+}
+
+.Footer .icons .linkedin:hover,
+.Footer .icons .github:hover,
+.Footer .icons .gmail:hover,
+.Footer .icons .whatsapp:hover {
+  width: 100px;
+  height: 100px;
+  margin: 0 -10px;
 }
