@@ -1,4 +1,3 @@
-// src/left/main/MainComponent.jsx
 import './MainComponent.css'
 
 export const MainComponent = () => {

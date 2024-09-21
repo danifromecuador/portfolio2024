@@ -1,4 +1,3 @@
-// src/main/App.jsx
 import { Header } from './left/header/Header.jsx'
 import { MainComponent } from './left/mainComponent/MainComponent.jsx'
 import { Navbar } from './left/navbar/Navbar.jsx'

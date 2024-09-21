@@ -1,4 +1,3 @@
-// src/letf/footer/Footer.jsx
 import { Stores } from '../../store/store'
 import './Footer.css'
 

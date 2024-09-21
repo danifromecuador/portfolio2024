@@ -1,4 +1,3 @@
-/* src/main/App.css */
 .app {
   width: 95vw;
   height: 95vh;
@@ -26,6 +25,4 @@
 .Skills,
 .Contact {
   height: 100vh;
-
-  /* border: 1px solid red; */
 }

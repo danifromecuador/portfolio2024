@@ -1,4 +1,3 @@
-// src/
 import './About.css'
 
 export const About = () => {

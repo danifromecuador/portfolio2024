@@ -1,4 +1,3 @@
-// src/left/header/Header.jsx
 import { useState, useEffect } from 'react'
 import { Stores } from '../../store/store.js'
 import './Header.css'
