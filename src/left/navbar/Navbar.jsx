@@ -1,4 +1,3 @@
-// src/left/navbar/Navbar.jsx
 import { useState, useEffect } from 'react'
 import { Stores } from '../../store/store.js'
 import './Navbar.css'

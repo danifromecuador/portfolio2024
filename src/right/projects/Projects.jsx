@@ -1,4 +1,3 @@
-// src/
 import './Projects.css'
 
 export const Projects = () => {

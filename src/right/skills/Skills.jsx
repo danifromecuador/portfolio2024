@@ -1,4 +1,3 @@
-// src/
 import './Skills.css'
 
 export const Skills = () => {
