@@ -1,16 +1,20 @@
 import { useState } from 'react'
+import { Stores } from '../../../store/store'
 import './TodoList.css'
 
 export const TodoList = () => {
+  const store = Stores()
   const [input, setInput] = useState("")
-  const array = ["a", "b", "c"]
+
+  const AddTodo = () => (input && (store.TodoList.add(input), setInput("")))
+
   return (
     <div className='TodoList'>
       <h1>Todo List</h1>
-      <ul>{array.map(e => (
-        <li>
+      <ul>{store.TodoList.todos.map(e => (
+        <li key={e.id}>
           <input type="checkbox" />
-          <span>{e}</span>
+          <span>{e.text}</span>
         </li>))}
       </ul>
       <button>Delete All Completed</button>
@@ -18,10 +22,11 @@ export const TodoList = () => {
         <input
           type="text"
           placeholder='Type a todo'
+          value={input}
+          onChange={e => setInput(e.target.value)}
+          onKeyDown={k => k.key === "Enter" && AddTodo()}
         />
-        <button>
-          Add
-        </button>
+        <button onClick={() => AddTodo()}>Add</button>
       </div>
     </div>
   )
