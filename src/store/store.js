@@ -36,7 +36,7 @@ const TodoListSlice = set => ({
       if (state.TodoList.todos[i].id === e.id) index = i
     }
     let newTodos = [...state.TodoList.todos]
-    newTodos[index].completed = true
+    newTodos[index].completed === true ? newTodos[index].completed = false : newTodos[index].completed = true
     return ({
       TodoList: {
         ...state.TodoList,
