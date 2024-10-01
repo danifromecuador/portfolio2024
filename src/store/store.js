@@ -20,7 +20,7 @@ const BearSlice = () => ({
   bears: 23,
 })
 
-const TodoListSlice = (set) => ({
+const TodoListSlice = set => ({
   todos: [],
   add: (input) => (set(state => ({
     TodoList: {
@@ -29,7 +29,21 @@ const TodoListSlice = (set) => ({
         id: Date.now(), text: input, completed: false
       }]
     }
-  })))
+  }))),
+  markAsDone: (e) => (set(state => {
+    let index = 0
+    for (let i = 0; i < state.TodoList.todos.length; i++) {
+      if (state.TodoList.todos[i].id === e.id) index = i
+    }
+    let newTodos = [...state.TodoList.todos]
+    newTodos[index].completed = true
+    return ({
+      TodoList: {
+        ...state.TodoList,
+        todos: newTodos
+      }
+    })
+  }))
 })
 
 export const Stores = create(devtools((set) => ({

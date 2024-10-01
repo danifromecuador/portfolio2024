@@ -13,7 +13,11 @@ export const TodoList = () => {
       <h1>Todo List</h1>
       <ul>{store.TodoList.todos.map(e => (
         <li key={e.id}>
-          <input type="checkbox" />
+          <input
+            type="checkbox"
+            defaultChecked={e.completed}
+            onChange={() => store.TodoList.markAsDone(e)}
+          />
           <span>{e.text}</span>
         </li>))}
       </ul>
