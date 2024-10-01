@@ -43,6 +43,18 @@ const TodoListSlice = set => ({
         todos: newTodos
       }
     })
+  })),
+  deleteAllCompleted: () => (set(state => {
+    let notCompleted = []
+    for (let i = 0; i < state.TodoList.todos.length; i++) {
+      if (state.TodoList.todos[i].completed === false) notCompleted.push(state.TodoList.todos[i])
+    }
+    return ({
+      TodoList: {
+        ...state.TodoList,
+        todos: notCompleted
+      }
+    })
   }))
 })
 

@@ -21,7 +21,7 @@ export const TodoList = () => {
           <span>{e.text}</span>
         </li>))}
       </ul>
-      <button>Delete All Completed</button>
+      <button onClick={() => store.TodoList.deleteAllCompleted()} >Delete All Completed</button>
       <div>
         <input
           type="text"
