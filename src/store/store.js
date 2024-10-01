@@ -1,6 +1,5 @@
 import { create } from "zustand";
 import { devtools } from 'zustand/middleware';
-import { TodoList } from "../right/about/miniprojects/TodoList";
 
 const ThemeSlice = (set) => ({
   theme: JSON.parse(localStorage.getItem("theme")) || "light",
