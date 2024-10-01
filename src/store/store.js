@@ -21,7 +21,7 @@ const BearSlice = () => ({
 })
 
 const TodoListSlice = set => ({
-  todos: [],
+  todos: JSON.parse(localStorage.getItem("todoList")) || [],
   add: (input) => (set(state => ({
     TodoList: {
       ...state.TodoList,

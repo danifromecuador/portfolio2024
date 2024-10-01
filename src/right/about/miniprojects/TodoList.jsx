@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Stores } from '../../../store/store'
 import './TodoList.css'
 
@@ -7,6 +7,7 @@ export const TodoList = () => {
   const [input, setInput] = useState("")
 
   const AddTodo = () => (input && (store.TodoList.add(input), setInput("")))
+  useEffect(() => localStorage.setItem("todoList", JSON.stringify(store.TodoList.todos)), [store.TodoList.todos])
 
   return (
     <div className='TodoList'>
