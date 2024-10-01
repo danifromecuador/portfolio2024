@@ -1,4 +1,3 @@
-import { TodoList } from '../about/miniprojects/TodoList'
 import './Projects.css'
 
 export const Projects = () => {
@@ -6,7 +5,6 @@ export const Projects = () => {
     <div className='Projects' id='projects'>
       Projects Component
       <div>
-        <TodoList />
       </div>
     </div>
   )
