@@ -7,11 +7,8 @@ export const TodoList = () => {
   const [input, setInput] = useState("")
 
   const AddTodo = () => (input && (store.TodoList.add(input), setInput("")))
-  const showDelBtn = () => {
-    for (let i = 0; i < store.TodoList.todos.length; i++) {
-      if (store.TodoList.todos[i].completed === true) return true
-    }
-  }
+  const showDelBtn = () => store.TodoList.todos.some(item => item.completed)
+
   useEffect(() => localStorage.setItem("todoList", JSON.stringify(store.TodoList.todos)), [store.TodoList.todos])
 
   return (
@@ -19,11 +16,7 @@ export const TodoList = () => {
       <h1>Todo List</h1>
       <ul>{store.TodoList.todos.map(e => (
         <li key={e.id}>
-          <input
-            type="checkbox"
-            defaultChecked={e.completed}
-            onChange={() => store.TodoList.markAsDone(e)}
-          />
+          <input type="checkbox" defaultChecked={e.completed} onChange={() => store.TodoList.markAsDone(e)} />
           <span>{e.text}</span>
         </li>))}
       </ul>
@@ -33,7 +26,7 @@ export const TodoList = () => {
       <div>
         <input
           type="text"
-          placeholder='Type a todo'
+          placeholder='Type a new task'
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={k => k.key === "Enter" && AddTodo()}
