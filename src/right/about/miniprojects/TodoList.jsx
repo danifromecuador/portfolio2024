@@ -7,6 +7,11 @@ export const TodoList = () => {
   const [input, setInput] = useState("")
 
   const AddTodo = () => (input && (store.TodoList.add(input), setInput("")))
+  const showDelBtn = () => {
+    for (let i = 0; i < store.TodoList.todos.length; i++) {
+      if (store.TodoList.todos[i].completed === true) return true
+    }
+  }
   useEffect(() => localStorage.setItem("todoList", JSON.stringify(store.TodoList.todos)), [store.TodoList.todos])
 
   return (
@@ -22,7 +27,9 @@ export const TodoList = () => {
           <span>{e.text}</span>
         </li>))}
       </ul>
-      <button onClick={() => store.TodoList.deleteAllCompleted()} >Delete All Completed</button>
+      <button className={`${showDelBtn() ? "" : "hide"}`} onClick={() => store.TodoList.deleteAllCompleted()}>
+        Delete All Completed
+      </button>
       <div>
         <input
           type="text"
