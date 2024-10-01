@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Stores } from '../../../store/store'
-import './TodoList.css'
 
 export const TodoList = () => {
   const store = Stores()
