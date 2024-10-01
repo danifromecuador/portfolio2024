@@ -15,10 +15,6 @@ const ThemeSlice = (set) => ({
   },
 })
 
-const BearSlice = () => ({
-  bears: 23,
-})
-
 const TodoListSlice = set => ({
   todos: JSON.parse(localStorage.getItem("todoList")) || [],
   add: (input) => (set(state => ({
@@ -59,6 +55,5 @@ const TodoListSlice = set => ({
 
 export const Stores = create(devtools((set) => ({
   ThemeSlice: ThemeSlice(set),
-  BearSlice: BearSlice(),
   TodoList: TodoListSlice(set)
 })))
