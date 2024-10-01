@@ -7,10 +7,7 @@ export const TodoList = () => {
   const [input, setInput] = useState("")
 
   const AddTodo = () => (input && (store.TodoList.add(input), setInput("")))
-
-  useEffect(() => {
-    localStorage.setItem("todoList", JSON.stringify(store.TodoList.todos))
-  }, [store.TodoList.todos])
+  useEffect(() => localStorage.setItem("todoList", JSON.stringify(store.TodoList.todos)), [store.TodoList.todos])
 
   return (
     <div className='TodoList'>
