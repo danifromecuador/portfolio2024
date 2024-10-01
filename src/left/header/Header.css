@@ -49,6 +49,7 @@
   box-shadow: 0 0 100px 160px rgba(74, 110, 133, 0.5);
 }
 
+/*
 @keyframes rotate_sun {
   from {
     transform: rotateZ(0deg);
@@ -72,3 +73,4 @@
     transform: rotateZ(0deg);
   }
 }
+*/
