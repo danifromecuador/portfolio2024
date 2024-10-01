@@ -3,7 +3,6 @@ import './Footer.css'
 
 export const Footer = () => {
   const { theme } = Stores().ThemeSlice
-  console.log(theme);
   return (
     <div className='Footer'>
       <div className="icons">
