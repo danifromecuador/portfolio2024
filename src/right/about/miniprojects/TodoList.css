@@ -1,5 +1,4 @@
-.TodoList {
-  border: 1px solid red;
-  width: 400px;
-  height: 400px;
+.TodoList ul {
+  height: 230px;
+  overflow-y: auto;
 }
