@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.Calculator .on-off {
+.Calculator .AC {
   position: fixed;
   align-self:flex-end;
 }
