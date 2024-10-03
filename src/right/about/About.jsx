@@ -1,4 +1,5 @@
 import { TodoList } from '../about/miniprojects/TodoList'
+import { Calculator } from './miniprojects/Calculator'
 import './About.css'
 
 export const About = () => {
@@ -11,7 +12,7 @@ export const About = () => {
         <TodoList />
         </div>
         <div className="calculator">
-          CALCULATOR
+          <Calculator />
         </div>
         <div className="tic-tac-toe">
           TIC TAC TOE
