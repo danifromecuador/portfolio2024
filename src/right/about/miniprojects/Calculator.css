@@ -6,6 +6,11 @@
   align-items: center;
 }
 
+.Calculator .on-off {
+  position: fixed;
+  align-self:flex-end;
+}
+
 .Calculator .display {
   border: 1px solid red;
   width: 100%;
