@@ -19,8 +19,10 @@ export const Calculator = () => {
 
   return (
     <div className='Calculator'>
-      <h1>CAS1O</h1>
-      <button className='AC button' onClick={() => handleKey('AC')}>AC</button>
+      <div className="brand">
+        <h1>CAS1O</h1>
+        <button className='AC button' onClick={() => handleKey('AC')}>AC</button>
+      </div>
       <div className='display'>{display}</div>
       <div className='keypad'>
         {keyPad.map(k => <button className='key button' key={k} onClick={() => handleKey(k)}>{k}</button>)}
