@@ -1,0 +1,34 @@
+.Calculator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Calculator .brand {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Calculator .display {
+  width: 100%;
+  height: 15%;
+  border: 1px solid red;
+  padding: 0 5px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.Calculator .keypad {
+  width: 250px;
+  height: 200px;
+}
+
+.Calculator .keypad .key {
+  width: 25%;
+  height: 25%;
+}

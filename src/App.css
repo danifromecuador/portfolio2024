@@ -1,4 +1,8 @@
-.app {
+.button {
+  cursor: pointer;
+}
+
+.App {
   width: 95vw;
   height: 95vh;
   display: flex;
