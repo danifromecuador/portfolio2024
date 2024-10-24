@@ -2,10 +2,14 @@ import { useState } from 'react'
 import './TicTacToe.css'
 
 export const TicTacToe = () => {
-  const [array, setArray] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0])
+  const [array, setArray] = useState([0, 0, 0, "O", 0, 0, 0, 0, 0])
 
   const handleClick = (i) => {
-    if (array[i] === 0) setArray(array, array[i] = "X")
+    if (array[i] === 0) {
+      let newArray = [...array]
+      newArray[i] = "X"
+      setArray(newArray)
+    }
   }
 
   return (
@@ -20,7 +24,7 @@ export const TicTacToe = () => {
         <button onClick={() => handleClick(5)}>{`${array[5] === 0 ? "" : array[5]}`}</button>
         <button onClick={() => handleClick(6)}>{`${array[6] === 0 ? "" : array[6]}`}</button>
         <button onClick={() => handleClick(7)}>{`${array[7] === 0 ? "" : array[7]}`}</button>
-        <button onClick={() => handleClick(8)}>{array[8]}</button>
+        <button onClick={() => handleClick(8)}>{`${array[8] === 0 ? "" : array[8]}`}</button>
       </div>
     </div>
   )
