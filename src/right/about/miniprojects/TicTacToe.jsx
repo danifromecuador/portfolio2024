@@ -5,7 +5,6 @@ export const TicTacToe = () => {
   const [array, setArray] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0])
   const [allowComputerResponse, setAllowComputerResponse] = useState(false)
 
-  // const mouseDown = i => setArray(prevArray => prevArray.map((item, index) => index === i && item === 0 ? 'X' : item))
   const mouseDown = i => {
     if (array[i] === 0) {
       let newArray = [...array]
@@ -17,16 +16,17 @@ export const TicTacToe = () => {
   }
 
   const mouseUp = (i) => {
-    console.log(allowComputerResponse)
     if (allowComputerResponse) {
-      for (let index = 0; index < array.length; index++) {
-        let randomIndex = parseInt(Math.random().toString().split('')[2])
-        console.log(randomIndex + 1)
+      let isDone = false
+      while (!isDone) {
+        const arrayIsFilled = array.every(e => e !== 0)
+        const randomIndex = parseInt(Math.random().toString().split('')[2])
+        if (arrayIsFilled) isDone = true
         if (array[randomIndex] === 0) {
           let newArray = [...array]
           newArray[randomIndex] = 'O'
           setArray(newArray)
-          break;
+          isDone = true
         }
       }
     }
