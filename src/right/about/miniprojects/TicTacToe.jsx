@@ -46,6 +46,7 @@ export const TicTacToe = () => {
         <button onMouseDown={() => mouseDown(7)} onMouseUp={() => mouseUp(7)}>{`${array[7] === 0 ? "" : array[7]}`}</button>
         <button onMouseDown={() => mouseDown(8)} onMouseUp={() => mouseUp(8)}>{`${array[8] === 0 ? "" : array[8]}`}</button>
       </div>
+      <button onClick={() => setArray(([0, 0, 0, 0, 0, 0, 0, 0, 0]))}>RESET</button>
     </div>
   )
 }
