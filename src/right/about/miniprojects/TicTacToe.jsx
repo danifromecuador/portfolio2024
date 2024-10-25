@@ -4,17 +4,11 @@ import './TicTacToe.css'
 export const TicTacToe = () => {
   const [array, setArray] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0])
 
-  const mouseDown = i => {
-    if (array[i] === 0) {
-      let newArray = [...array]
-      newArray[i] = 'X'
-      setArray(newArray)
-    }
-  }
+  const mouseDown = i => setArray(prevArray => prevArray.map((item, index) => index === i && item === 0 ? 'X' : item))
 
   const mouseUp = () => {
     for (let i = 0; i < array.length; i++) {
-      let randomIndex = Math.random().toString().split('')[2]      
+      let randomIndex = Math.random().toString().split('')[2]
       if (array[randomIndex] === 0) {
         let newArray = [...array]
         newArray[randomIndex] = 'O'
