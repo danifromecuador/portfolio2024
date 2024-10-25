@@ -1,0 +1,19 @@
+.TicTacToe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.TicTacToe .grid {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+}
+
+.TicTacToe .grid button {
+  width: 33%;
+  height: 33%;
+}
