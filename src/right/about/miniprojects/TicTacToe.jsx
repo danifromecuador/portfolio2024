@@ -41,9 +41,21 @@ export const TicTacToe = () => {
     if (array[0] === 'X' && array[3] === 'X' && array[6] === 'X') console.log('you winnnnnn')
     if (array[1] === 'X' && array[4] === 'X' && array[7] === 'X') console.log('you winnnnnn')
     if (array[2] === 'X' && array[5] === 'X' && array[8] === 'X') console.log('you winnnnnn')
-      // 3 en raya oblícuas
+    // 3 en raya oblícuas
     if (array[0] === 'X' && array[4] === 'X' && array[8] === 'X') console.log('you winnnnnn')
     if (array[2] === 'X' && array[4] === 'X' && array[6] === 'X') console.log('you winnnnnn')
+
+    // 3 en raya horizontales
+    if (array[0] === 'O' && array[1] === 'O' && array[2] === 'O') console.log('you lossss')
+    if (array[3] === 'O' && array[4] === 'O' && array[5] === 'O') console.log('you lossss')
+    if (array[6] === 'O' && array[7] === 'O' && array[8] === 'O') console.log('you lossss')
+    // 3 en raya verticales
+    if (array[0] === 'O' && array[3] === 'O' && array[6] === 'O') console.log('you lossss')
+    if (array[1] === 'O' && array[4] === 'O' && array[7] === 'O') console.log('you lossss')
+    if (array[2] === 'O' && array[5] === 'O' && array[8] === 'O') console.log('you lossss')
+    // 3 en raya oblícuas
+    if (array[0] === 'O' && array[4] === 'O' && array[8] === 'O') console.log('you lossss')
+    if (array[2] === 'O' && array[4] === 'O' && array[6] === 'O') console.log('you lossss')
   }, [array])
 
   return (
