@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './TicTacToe.css'
 
 export const TicTacToe = () => {
@@ -15,7 +15,7 @@ export const TicTacToe = () => {
     else setAllowComputerResponse(false)
   }
 
-  const mouseUp = (i) => {
+  const mouseUp = () => {
     if (allowComputerResponse) {
       let isDone = false
       while (!isDone) {
