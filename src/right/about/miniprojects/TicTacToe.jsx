@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './TicTacToe.css'
 
 export const TicTacToe = () => {
@@ -31,6 +31,20 @@ export const TicTacToe = () => {
       }
     }
   }
+
+  useEffect(() => {
+    // 3 en raya horizontales
+    if (array[0] === 'X' && array[1] === 'X' && array[2] === 'X') console.log('you winnnnnn')
+    if (array[3] === 'X' && array[4] === 'X' && array[5] === 'X') console.log('you winnnnnn')
+    if (array[6] === 'X' && array[7] === 'X' && array[8] === 'X') console.log('you winnnnnn')
+    // 3 en raya verticales
+    if (array[0] === 'X' && array[3] === 'X' && array[6] === 'X') console.log('you winnnnnn')
+    if (array[1] === 'X' && array[4] === 'X' && array[7] === 'X') console.log('you winnnnnn')
+    if (array[2] === 'X' && array[5] === 'X' && array[8] === 'X') console.log('you winnnnnn')
+      // 3 en raya oblícuas
+    if (array[0] === 'X' && array[4] === 'X' && array[8] === 'X') console.log('you winnnnnn')
+    if (array[2] === 'X' && array[4] === 'X' && array[6] === 'X') console.log('you winnnnnn')
+  }, [array])
 
   return (
     <div className='TicTacToe'>
